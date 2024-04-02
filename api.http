@@ -1,0 +1,26 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": "Unite Summit2",
+  "details": "Um evento muito bom",
+  "maximumAttendees": 100
+}
+
+###
+
+POST http://localhost:3333/events/bd942f04-8b2d-485e-b67b-02a286cf0988/attendees
+Content-Type: application/json
+
+{
+  "name": "Miguel Novaes",
+  "email": "miguelnovaes@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/bd942f04-8b2d-485e-b67b-02a286cf0988
+
+###
+
+GET http://localhost:3333/attendees/1/badge
